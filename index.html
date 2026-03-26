@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCお悩み相談本舗 | データ復旧・Mac/Win出張修理</title>
+<style>
+  /* 全体のデザイン設定 */
+  body { font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #fefefe; }
+  header { background-color: #0056b3; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  .logo { font-size: 1.5rem; font-weight: bold; }
+  
+  /* ヒーローエリア（画像対応） */
+  .hero-section { background-color: #e6f2ff; padding: 60px 20px; }
+  .hero-container { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 40px; }
+  .hero-content { flex: 1; }
+  .hero-image { flex: 1; text-align: center; }
+  .hero-image img { max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); border: 5px solid white; }
+  .hero-content h1 { font-size: 2.5rem; color: #0056b3; margin-top: 0; margin-bottom: 15px; }
+  .hero-content p { font-size: 1.2rem; margin: 10px 0; }
+  
+  /* コンテンツエリア */
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  h2 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; margin-top: 50px;}
+  
+  /* 3つの強み（画像対応） */
+  .features { display: flex; flex-wrap: wrap; gap: 25px; margin-top: 30px; }
+  .feature-box { flex: 1; min-width: 250px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: center; transition: 0.3s; border: 1px solid #eee; }
+  .feature-box:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.12); }
+  .feature-icon { width: 80px; height: 80px; margin-bottom: 20px; }
+  .feature-box h3 { color: #0056b3; margin-top: 0; font-size: 1.4rem; padding-bottom: 10px; }
+  .trust-banner { background-color: #fff3e0; border-left: 5px solid #ff9800; padding: 18px; margin-top: 40px; font-weight: bold; border-radius: 4px; }
+
+  /* 料金表 */
+  .price-list { width: 100%; border-collapse: collapse; margin-top: 25px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+  .price-list th, .price-list td { border: 1px solid #eee; padding: 18px; text-align: left; }
+  .price-list th { background-color: #0056b3; color: white; width: 35%; font-size: 1.1rem; }
+  .price-price { font-size: 1.2rem; font-weight: bold; color: #d32f2f; }
+  
+  /* お問い合わせエリア */
+  .cta { background-color: #ff9800; color: white; text-align: center; padding: 50px 20px; margin-top: 60px; }
+  .cta h2 { color: white; border: none; margin-top: 0; padding-bottom: 0; font-size: 2rem;}
+  .btn { display: inline-block; background-color: #d32f2f; color: white; padding: 18px 50px; text-decoration: none; font-size: 1.4rem; border-radius: 50px; font-weight: bold; margin-top: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; }
+  .btn:hover { background-color: #b71c1c; transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.35); }
+  .tel-num { font-size: 2rem; font-weight: bold; margin-top: 15px; display: block; }
+
+  footer { background-color: #333; color: rgba(255,255,255,0.8); text-align: center; padding: 25px; font-size: 0.9rem; }
+  
+  /* スマホ対応（レスポンシブ） */
+  @media (max-width: 768px) {
+    .hero-container { flex-direction: column-reverse; gap: 30px; text-align: center; }
+    .hero-content h1 { font-size: 1.9rem; }
+    .features { flex-direction: column; }
+    .price-list th, .price-list td { display: block; width: 100%; box-sizing: border-box; }
+    .price-list th { border-bottom: none; }
+    .tel-num { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">PCお悩み相談本舗</div>
+  <div style="font-size: 0.9rem; font-weight: bold;">小平市から迅速に出張！</div>
+</header>
+
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>パソコンのトラブル、<br>ご自宅まで出張解決します！</h1>
+      <p><strong>データ復旧に強い！MacもWindowsも完全対応。</strong></p>
+      <p>15分電話無料相談実施中！電話アドバイスで直れば料金は一切いただきません。</p>
+    </div>
+    <div class="hero-image">
+      <img src="hero-repair.jpg" alt="パソコン修理の出張作業の様子">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <h2>当店の3つの強み</h2>
+  <div class="features">
+    <div class="feature-box">
+      <img src="icon-data.png" alt="データ復旧アイコン" class="feature-icon">
+      <h3>1. データ復旧に強い</h3>
+      <p>「電源が入らない」「エラーが出る」といった状態のPCからのデータ救出はお任せください。大切な写真や仕事のデータを高い確率で復旧します。</p>
+    </div>
+    <div class="feature-box">
+      <img src="icon-pc.png" alt="WindowsとMacのアイコン" class="feature-icon">
+      <h3>2. MacもWindowsもOK</h3>
+      <p>Windowsはもちろん、他店で断られがちなMacの修理も大歓迎です。メーカーや自作機を問わず、あらゆるパソコントラブルに対応可能です。</p>
+    </div>
+    <div class="feature-box">
+      <img src="icon-car.png" alt="出張修理カーのアイコン" class="feature-icon">
+      <h3>3. 出張修理メイン</h3>
+      <p>小平市を中心に、ご自宅やオフィスへ直接お伺いします。重いパソコンを持ち運ぶ手間なく、その場で解決へ導きます。</p>
+    </div>
+  </div>
+  
+  <div class="trust-banner">
+    ✨ 法人様向けのシステム・端末サポートにおいても5年以上の確かな実績がございます。安心の技術力で、個人のお客様のトラブルも迅速に解決いたします。
+  </div>
+
+  <h2>料金の目安・代表的なメニュー</h2>
+  <p>※当店の平均的な修理代は<strong>30,000円前後</strong>です。大手量販店（5〜6万円スタート）よりリーズナブルに適正価格で修理いたします。<br>※以下の料金は「基本料＋診断料」を含んだ目安（税込）です。</p>
+  
+  <table class="price-list">
+    <tr>
+      <th>メニュー</th>
+      <th>料金の目安</th>
+    </tr>
+    <tr>
+      <td><strong>お電話での簡易相談・アドバイス</strong><br><small>電話で解決した場合は一切料金はいただきません！</small></td>
+      <td class="price-price">無料</td>
+    </tr>
+    <tr>
+      <td><strong>データ復旧</strong><br><small>動作不能なPCからのデータ救出（100GBまで）</small></td>
+      <td class="price-price">24,200円〜</td>
+    </tr>
+    <tr>
+      <td><strong>SSD換装フルコース</strong><br><small>動作が遅い古いPCを劇的に高速化させます</small></td>
+      <td class="price-price">35,000円〜<br><small>（別途SSD部品代）</small></td>
+    </tr>
+    <tr>
+      <td><strong>液晶パネル交換</strong><br><small>割れてしまった画面や線の入った液晶の交換</small></td>
+      <td class="price-price">50,000円前後〜<br><small>（部品代により増減あり）</small></td>
+    </tr>
+  </table>
+
+  <h2>お客様に選ばれる理由</h2>
+  <ul>
+    <li>すぐに「買い替え」をおすすめするのではなく、今のPCを直して長く使うための最善策をご提案します。</li>
+    <li>安かろう悪かろうではなく、適正価格で長持ちする確実な修理を行います。</li>
+    <li>専門用語を使わず、お客様にわかりやすく丁寧にご説明します。</li>
+  </ul>
+</div>
+
+<div class="cta">
+  <h2>パソコン不調でお悩みの方へ</h2>
+  <p>「電源が入らない」「動きが遅い」「データが見られない」<br>どんなことでも、まずは無料電話相談へお気軽にご連絡ください！</p>
+  
+  <a href="tel:090-0000-0000" class="btn">
+    📞 今すぐ無料相談する<br>
+    <span class="tel-num">090-0000-0000</span>
+  </a>
+</div>
+
+<footer>
+  &copy; 2026 PCお悩み相談本舗 All Rights Reserved.
+</footer>
+
+</body>
+</html>
