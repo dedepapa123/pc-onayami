@@ -10,7 +10,7 @@
   header { background-color: #0056b3; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
   .logo { font-size: 1.5rem; font-weight: bold; }
   
-  /* ヒーローエリア（画像対応） */
+  /* ヒーローエリア */
   .hero-section { background-color: #e6f2ff; padding: 60px 20px; }
   .hero-container { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 40px; }
   .hero-content { flex: 1; }
@@ -23,7 +23,7 @@
   .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
   h2 { border-bottom: 2px solid #0056b3; padding-bottom: 10px; color: #0056b3; margin-top: 50px;}
   
-  /* 3つの強み（画像対応） */
+  /* 3つの強み */
   .features { display: flex; flex-wrap: wrap; gap: 25px; margin-top: 30px; }
   .feature-box { flex: 1; min-width: 250px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: center; transition: 0.3s; border: 1px solid #eee; }
   .feature-box:hover { transform: translateY(-5px); box-shadow: 0 5px 20px rgba(0,0,0,0.12); }
@@ -37,6 +37,12 @@
   .price-list th { background-color: #0056b3; color: white; width: 35%; font-size: 1.1rem; }
   .price-price { font-size: 1.2rem; font-weight: bold; color: #d32f2f; }
   
+  /* 会社情報（アクセス） */
+  .company-info { background-color: #f9f9f9; padding: 30px; border-radius: 8px; margin-top: 30px; border: 1px solid #ddd; }
+  .company-info table { width: 100%; border-collapse: collapse; }
+  .company-info th { text-align: left; padding: 10px 0; width: 100px; color: #0056b3; border-bottom: 1px dotted #ccc; }
+  .company-info td { padding: 10px 0; border-bottom: 1px dotted #ccc; }
+
   /* お問い合わせエリア */
   .cta { background-color: #ff9800; color: white; text-align: center; padding: 50px 20px; margin-top: 60px; }
   .cta h2 { color: white; border: none; margin-top: 0; padding-bottom: 0; font-size: 2rem;}
@@ -46,7 +52,7 @@
 
   footer { background-color: #333; color: rgba(255,255,255,0.8); text-align: center; padding: 25px; font-size: 0.9rem; }
   
-  /* スマホ対応（レスポンシブ） */
+  /* スマホ対応 */
   @media (max-width: 768px) {
     .hero-container { flex-direction: column-reverse; gap: 30px; text-align: center; }
     .hero-content h1 { font-size: 1.9rem; }
@@ -54,6 +60,8 @@
     .price-list th, .price-list td { display: block; width: 100%; box-sizing: border-box; }
     .price-list th { border-bottom: none; }
     .tel-num { font-size: 1.5rem; }
+    .company-info th, .company-info td { display: block; width: 100%; border-bottom: none; padding: 5px 0;}
+    .company-info td { margin-bottom: 15px; border-bottom: 1px dotted #ccc;}
   }
 </style>
 </head>
@@ -61,7 +69,7 @@
 
 <header>
   <div class="logo">PCお悩み相談本舗</div>
-  <div style="font-size: 0.9rem; font-weight: bold;">小平市から迅速に出張！</div>
+  <div style="font-size: 0.9rem; font-weight: bold;">三鷹市から迅速に出張！</div>
 </header>
 
 <section class="hero-section">
@@ -93,7 +101,7 @@
     <div class="feature-box">
       <img src="icon-car.png" alt="出張修理カーのアイコン" class="feature-icon">
       <h3>3. 出張修理メイン</h3>
-      <p>小平市を中心に、ご自宅やオフィスへ直接お伺いします。重いパソコンを持ち運ぶ手間なく、その場で解決へ導きます。</p>
+      <p>三鷹市を中心に、ご自宅やオフィスへ直接お伺いします。重いパソコンを持ち運ぶ手間なく、その場で解決へ導きます。</p>
     </div>
   </div>
   
@@ -127,21 +135,36 @@
     </tr>
   </table>
 
-  <h2>お客様に選ばれる理由</h2>
-  <ul>
-    <li>すぐに「買い替え」をおすすめするのではなく、今のPCを直して長く使うための最善策をご提案します。</li>
-    <li>安かろう悪かろうではなく、適正価格で長持ちする確実な修理を行います。</li>
-    <li>専門用語を使わず、お客様にわかりやすく丁寧にご説明します。</li>
-  </ul>
+  <h2>店舗情報</h2>
+  <div class="company-info">
+    <table>
+      <tr>
+        <th>屋号</th>
+        <td>PCお悩み相談本舗</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒181-0011 東京都三鷹市井口１丁目8-1</td>
+      </tr>
+      <tr>
+        <th>出張エリア</th>
+        <td>三鷹市、調布市、武蔵野市、府中市など（その他エリアもご相談ください）</td>
+      </tr>
+      <tr>
+        <th>営業時間</th>
+        <td>9:00 〜 19:00（不定休）※出張作業中は電話に出られない場合がございます。</td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <div class="cta">
   <h2>パソコン不調でお悩みの方へ</h2>
   <p>「電源が入らない」「動きが遅い」「データが見られない」<br>どんなことでも、まずは無料電話相談へお気軽にご連絡ください！</p>
   
-  <a href="tel:090-0000-0000" class="btn">
+  <a href="tel:09084537815" class="btn">
     📞 今すぐ無料相談する<br>
-    <span class="tel-num">090-0000-0000</span>
+    <span class="tel-num">090-8453-7815</span>
   </a>
 </div>
 
